@@ -23,9 +23,15 @@
     "grunt-contrib-less": "0.11.1",
     "grunt-contrib-coffee": "~0.10.1"
   },
+  "devDependencies": {
+    "barrels": "^1.0.1",
+    "mocha": "^1.21.4",
+    "sails-memory": "^0.10.2"
+  },
   "scripts": {
     "start": "node app.js",
-    "debug": "node debug app.js"
+    "debug": "node debug app.js",
+    "test": "PORT=9999 NODE_ENV=test mocha -R spec -b --recursive"
   },
   "main": "app.js",
   "repository": {
@@ -33,5 +39,8 @@
     "url": "git://github.com/midhun/NodeCaptivePortal.git"
   },
   "author": "midhun",
-  "license": ""
+    "license": {
+    "type": "MIT",
+    "url": "http://www.opensource.org/licenses/MIT"
+  }
 }
