@@ -1,3 +1,13 @@
+var assert = require('assert');
+var Barrels = require('barrels');
+var fixtures
+ // Load fixtures
+    var barrels = new Barrels();
+
+    // Save original objects in `fixtures` variable
+    fixtures = barrels.data;
+
+
 // Here goes a module test
 describe('Fruits', function() {
   describe('#list()', function() {

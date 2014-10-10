@@ -30,9 +30,10 @@ module.exports.views = {
   *                                                                           *
   ****************************************************************************/
 
-  engine: 'ejs',
-  
-
+  engine: 'handlebars',
+  layout: 'main.handlebars', 
+  helpers: require('./helpers'),
+  partialsDir:'views/partials/'
   /****************************************************************************
   *                                                                           *
   * Layouts are simply top-level HTML templates you can use as wrappers for   *
@@ -57,7 +58,7 @@ module.exports.views = {
   *                                                                           *
   ****************************************************************************/
 
-  layout: 'layout'
+  //layout: 'layout'
 
   /****************************************************************************
   *                                                                           *
